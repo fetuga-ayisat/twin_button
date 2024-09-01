@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn_task {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #b2aea8;
+    border-radius: 100px;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 2px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn_1 {
+    background-color: #eaedff;
+    border-color: #eaedff;
+    border-radius: 50px 10px 10px 50px;
+}
+
+.btn_2 {
+    background-color: #6c82ff;
+    border-color: #6c82ff;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.btn_1:hover {
+    background-color: beige;
+    border: 3px solid #fff;
+}
+
+.btn_2:hover:hover {
+    background-color: #bdc6f6;
+    border: 3px solid #6c82ff;
+}
