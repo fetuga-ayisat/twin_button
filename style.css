@@ -1,7 +1,16 @@
+* {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    background-color: rgb(255, 249, 241);
+    font-family: poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/*week 1 task*/
 
 .btn_task {
     text-align: center;
@@ -12,7 +21,6 @@ body {
     position: fixed;
     overflow: hidden;
 }
-
 .btn {
     padding: 8px 15px;
     font-weight: bold;
@@ -35,12 +43,120 @@ body {
     border-radius: 10px 50px 50px 10px;
 }
 
-.btn_1:hover {
+.btn_task .btn_1:hover {
     background-color: beige;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
 }
 
-.btn_2:hover {
+.btn_task .btn_2:hover {
     background-color: #bdc6f6;
-    border: 3px solid #6c82ff;
+    border: 2px solid #6c82ff;
 }
+
+/*end*/
+
+
+
+
+/*week 2 task*/
+
+.week_two {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    background-color: #6a7ff3;
+    border-radius: 30px;
+}
+
+
+.section_1 {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section_2 {
+    display: grid;
+}
+
+.card_list{
+    display: grid;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    transition: all 350ms ease-in-out;
+
+    & span{
+        font-size: 1rem;
+    font-weight: 600;
+    }
+
+    & p{
+        font-size: 0.8rem;
+        font-weight: 300;
+        opacity: 0.6;
+    }
+}
+
+p, span {
+    margin: 0;
+}
+
+.list:hover {
+    background-color: #bdc6f6;
+}
+/*week 2 end*/
+
+
+/*week 3*/
+
+ul {
+    list-style: none;
+    background: #6696df4f;
+    border-radius: 20px;
+    padding: 15px;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+
+ul li ul.sub-menu li {
+    display: block;
+}
+ul li ul.sub-menu {
+    width: 100%;
+    background: #6c82ff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 20px;
+}
+ul li a:hover {
+    background: #0c2ce3;
+}
+ul li:hover ul.sub-menu {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    ul {
+        display: block;
+    }}
