@@ -110,7 +110,7 @@ p, span {
     margin: 0;
 }
 
-.list:hover {
+.card_list:hover {
     background-color: #bdc6f6;
 }
 /*week 2 end*/
